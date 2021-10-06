@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         rcvList.setAdapter(dongAdapter);
         //scroll tới vị trí của vị trí đang được chọn
         //rcvList.scrollToPosition(position);
-        manager.scrollToPositionWithOffset(position, arr.size());
+        //scrollToPositionWithOffset(vị trí scroll đến, khoảng cách so với đáy(nếu getStackFromEnd(), mặc định là so với top));
+        manager.scrollToPositionWithOffset(position, 500);
         txtPosition.setText("dòng được scroll là"+ position);
     }
     private void setArr(){
